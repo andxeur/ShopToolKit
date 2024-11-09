@@ -24,6 +24,15 @@ dependencyResolutionManagement {
 }
 ```
 
+Or
+
+```gradle
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+```
+
 > Step 2. Add the dependency below to use the ShopToolKit library
 
 ```gradle
