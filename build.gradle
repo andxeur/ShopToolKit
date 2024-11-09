@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'fr.coding.zip'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    //add the modue (the dependency) ShopToolKitCode
+    // to have access to these classes and methods
+    implementation project(path: ':ShopToolKitCode')
+}
+
+test {
+    useJUnitPlatform()
+}
